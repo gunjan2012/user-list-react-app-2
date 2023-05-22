@@ -1,0 +1,170 @@
+body {
+  background-color: #d5dff7;
+  font-family: Poppins,sans-serif;
+}
+
+.main-container{
+  display: flex;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  height: 47rem;
+  background-color: white;
+  box-shadow: 0 0 2.5rem 0 #87A0CE;
+}
+/*Bootstrap Table element has created this class named element which is visible in browser console */
+.table-responsive{
+  padding: 1rem;
+  overflow: auto;
+}
+
+.table-pagelist{
+  width: 60%;
+}
+
+.table-responsive::-webkit-scrollbar{
+  height: 0.3rem;
+}
+.table-responsive::-webkit-scrollbar-thumb:horizontal{
+  background: #87A0CE;
+  border-radius: 1rem;
+}
+
+.content-alignment{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-header{
+  font-size: 1.3rem;
+}
+
+.status-selector{
+  width: fit-content;
+  background-color: #f3f6fc;
+}
+
+.user-status{
+  color:#48c39a;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.user-detail-card{
+  height: 30rem;
+  margin: auto;
+  padding: 2rem;
+  width: 20rem;
+  background-color: white;
+  border-radius: 2.5rem;
+  box-shadow: 0 0 2.5rem 0 #87A0CE;
+}
+
+.card-user-name{
+  display: flex;
+  justify-content: center;
+}
+
+.progress-background{
+  border-radius: 1.8rem;
+  background: rgb(251, 227, 156);
+}
+
+.progress-bar {
+  height: 0.5rem;
+  border-radius: 1.8rem;
+  background: none;
+  animation: animate-progress 1s linear forwards;
+}
+
+/* Pagination */
+.page-link{
+  color: black;
+}
+
+.page-item.active .page-link{
+  background-color: #87A0CE;
+  border: none;
+}
+
+
+
+@keyframes animate-progress {
+  from {
+    width: 0%;
+  }
+  to{
+    width: 75%;
+  }
+}
+
+.verticle-line{
+  border: 1px solid rgb(195, 195, 195);
+  height: 3.4rem;
+  margin-top: 0.5rem;
+}
+
+.status-dot{
+  margin-left: 0.2rem;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 50%;
+}
+
+/* tablet view */
+@media (max-width:767px){
+  #root{
+    font-size: 0.8rem;
+  }
+  .main-container{
+    height: 41rem;
+  }
+  .table-pagelist{
+    width: 55%;
+  }
+  .form-select{
+    font-size: 0.7rem;
+  }
+  .user-detail-card{
+    width: 15rem;
+    height: 55%;
+  }
+  .card-user-name{
+    font-size : 0.7rem;
+  }
+  .rounded-circle{
+    width: 4rem;
+  }
+}
+
+/* mobile view */
+@media (max-width:576px){
+  #root{
+    margin: 5rem auto;
+    font-size: 0.8rem;
+    padding: 0 0.7rem;
+  }
+  .main-container{
+    flex-direction: column;
+    height: 42rem;
+  }
+  .form-select{
+    font-size: 0.7rem;
+  }
+  .table-pagelist{
+    width: 100%;
+  }
+  .rounded-circle{
+    width: 4rem;
+  }
+  .active-user-button{
+    font-size: 0.7rem;
+    padding: 0 2rem;
+  }
+  .modal-content{
+    background:none;
+    border: none;
+  }
+}
